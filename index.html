@@ -1,570 +1,241 @@
-<html>
-<head>
-<body background="background.jpg">
-<h1>  Anylvl steam accounts sell & buy & boosting   </h1>
-<br><br><br><br>
-<div id="header">
-<div id="nav">
-<ul>
-<li> <a href = "index.html">Services </a> </li> //links for other forms
-<li> <a href = " index.html">Main menu</a> </li>
-<li> <a href = " index.html">Guarantees</a> </li>
-<li> <a href = " index.html">Accounts</a> </li>
-<li> <a href = " index.html">Work</a> </li>
-</ul>
-</div>
-</div>
-
-<script>             //slider script
-var slider = {
-slides:['csgo.jpg','steam.jpeg','dota2.jpg','pubg.jpg'],
-frame:0, // текущий кадр для отбражения - индекс картинки из массива
-set: function(image) { // установка нужного фона слайдеру
-document.getElementById("scr").style.backgroundImage = "url("+image+")";
-},
-init: function() { // запуск слайдера с картинкой с нулевым индексом
-this.set(this.slides[this.frame]);
-},
-left: function() { // крутим на один кадр влево
-this.frame--;
-if(this.frame < 0) this.frame = this.slides.length-1;
-this.set(this.slides[this.frame]);
-},
-right: function() { // крутим на один кадр вправо
-this.frame++;
-if(this.frame == this.slides.length) this.frame = 0;
-this.set(this.slides[this.frame]);
-}
-};
-window.onload = function() { // запуск слайдера после загрузки документа
-slider.init();
-setInterval(function() { // 6sec
-slider.right();
-},6000);
-};
-
-</script>
-<body>
-<div id="main">
-<button class="left" onclick="slider.left();"><</button>
-<
-<button class="right" onclick="slider.right ();">></button>
-<div id="scr" ></div>
-</div>
-</body>
-</head>
-<div id="sidebar">
-<fieldset>
-<legend>Order</legend> //ORDER FORM
-
-<form action ="sign up" method ="post">
-Name   :<input type ="text" name="name"><br>
-Surname:<input type ="text" name="surname"><br>
-Mail   :<input type="text" name="mail" <br><br>
-Services: <select name ="service type">
-<option value ="BA">Buy account</option><br>
-<option value ="BB">Buy boosting</option><br>
-<option value ="games">Buy games</option><br>		<option value ="d2">Dota 2 services</option><br>
-<option value ="csgo">CS:GO services</option><br>
-<option value ="Sell">Sell accounts</option><br>
-//options for ORDER forms
-
-</select>
-<br></br>
-<input type="submit" value="order"><br>
-</div>
-</body>
-</html>
-<head>
-		<title>anylvlboosting</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-	<div class="wrapper">
-			<nav class="navbar">
-				<img class="logo" src="logo.png">
-				<img class="logo2" src="logo2.png">
-				<img class="logo3" src="logo3.jpg">
-				<ul>
-				<li><a class="active" href="Home.html">Home</a></li>
-					<li> <a href = "About us.html">About us</a> </li>
-					<li> <a href = "Guarantees.html">Guarantees</a> </li>
-					<li> <a href = "Table.html">List of boosters</a> </li>
-
-
-
-				</ul>
-			</nav>
-
-			<div class="center">
-			<h1 style="color:red"></h1>
-			<h2 style="color:red">Welcome to Anylvl gaming services!</h2>
-			<div class="buttons">
-			<form action="login.html" target="_blank">
-			<button>Authorisation</button>
-			<button>Order</button>
-
-		</div>
-		</div>
-		</div>
-		</script>
-<div>
-</body>
-</html>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-h1{color:white; text-align: center:}
-p{font-family:verdana; font-size:20px;}
-</style>
-</head>
-<bdoy?
-<h1>Ordering FORM</h1>
-<h1></h1>
-<html>
-<form action = "doc1.php" method="post">
-			<label>Name</label>
-<div>
-	<input type="text" name="u_name"> <br>
-</div>
-<div>
-	<label>Email</label>
-</div>
-<div>
-	<input type="text" name="email"> <br>
-</div>
-<div>
-	<label>Comment</label>
-</div>
-<div>
-	<textarea rows="10" cols="50" id="content" name="content">
-</textarea>
-</div>
-		<input type="submit" name="btn" value="ADD">
-		</form>
-		</html>
-
-		<?php
-//****CHECK IF BUTTON IS CLICKED ***
-if(isset($_POST['btn'])) {
-$conn = mysqli_connect("localhost","root","");
-//***SELECT DATABASE USING mysqli_select_db() FUNCTION ***
-mysqli_select_db($conn, "database1_example" );
-//include("connect.php");
-//***DECLARING VARIABLES AND ASSIGNING VALUES TO THEM***
-$clients_name = $_POST['u_name'];
-$clients_email = $_POST['email'];
-$clients_comment = $_POST['content'];
-//***SQL INSERT QUERY IS USED IN ORDER TO ADD A NEW RECORD TO A TABLE***
-$query = mysqli_query($conn,"INSERT INTO clients(name, email, comment)VALUES('$clients_name', '$clients_email', '$clients_comment')");
-//CHECK FOR SUCCESFUL QUERY
-if($query == true) {
-echo "<script> alert ('Thankhs for registration !') </script>";
-} else {
-echo "<script> alert ('Error with registration') </script>";
-exit();
-}
-}
-?>
-</body>
-</html>
-
-
-Connection with phpmyadmin and database
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body{background-color: lightblue}
-h1 {color: white;text-align: center;}
-p{font-family: verdana; font-size: 20px;}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>My First web site</h1>
-<p>You can leave your comments. Enter the following information</p>
-<html>
-<form action="Sign.up.php" method="post">
-<label>Name</label>
-<div>
-<input type="text" name="u_name"><br>
-</div>
-<div>
-<label>Email</label>
-</div>
-<div>
-<input type="text" name="Email"><br>
-</div>
-<div>
-<label>comment</label>
-</div>
-<div>
-<textarea rows="10" cols="50" id="content" name="content"></textarea>
-</div>
-<input type="submit" name="btn" value="ADD">
-</form>
-<?php
-if(isset($_POST['btn'])){
-$conn = mysqli_connect("localhost","root","";
-mysqli_select_db($conn,"anylvl");
-$clients_name = $_POST['u_name'];
-$clients_Email = $_POST['Email'];
-$clients_comment = $_POST['content'];
-$query = mysqli_query($conn, "INSERT INTO anylvl1(name,Email,comment)VALUES('$clients_name','$clients_Email','$clients_comment')");
-if($query == true ){
-echo "<script>alert('PASIBA')</script>";
-} else {
-echo "<script>alert('TRY AGAIN!')</script>";
-exit();
-}
-}
-?>
+<header class="header">
+    <nav class="navbar">
+        <a href="#home"><b>ГЛАВНАЯ</b></a>
+        <a href="#about"><strong>НАША КОМАНДА</strong></a>
+        <a href="#services"><b>УСЛУГИ</b></a>
+        <a href="#reviews"><b>ОТЗЫВЫ</b></a>
+        <a href="#garanties"><b>ГАРАНТИИ</b></a>
+    </nav>
+</header>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-h1{color:white; text-align: center:}
-p{font-family:verdana; font-size:20px;}
-</style>
-</head>
-<bdoy?
-<h1>Ordering FORM</h1>
-<h1></h1>
-<html>
-<form action = "doc1.php" method="post">
-			<label>Name</label>
-<div>
-	<input type="text" name="u_name"> <br>
-</div>
-<div>
-	<label>Email</label>
-</div>
-<div>
-	<input type="text" name="email"> <br>
-</div>
-<div>
-	<label>Comment</label>
-</div>
-<div>
-	<textarea rows="10" cols="50" id="content" name="content">
-</textarea>
-</div>
-		<input type="submit" name="btn" value="ADD">
-		</form>
-		</html>
 
-		<?php
-//****CHECK IF BUTTON IS CLICKED ***
-if(isset($_POST['btn'])) {
-$conn = mysqli_connect("localhost","root","");
-//***SELECT DATABASE USING mysqli_select_db() FUNCTION ***
-mysqli_select_db($conn, "database1_example" );
-//include("connect.php");
-//***DECLARING VARIABLES AND ASSIGNING VALUES TO THEM***
-$clients_name = $_POST['u_name'];
-$clients_email = $_POST['email'];
-$clients_comment = $_POST['content'];
-//***SQL INSERT QUERY IS USED IN ORDER TO ADD A NEW RECORD TO A TABLE***
-$query = mysqli_query($conn,"INSERT INTO clients(name, email, comment)VALUES('$clients_name', '$clients_email', '$clients_comment')");
-//CHECK FOR SUCCESFUL QUERY
-if($query == true) {
-echo "<script> alert ('Thankhs for registration !') </script>";
-} else {
-echo "<script> alert ('Error with registration') </script>";
-exit();
-}
-}
-?>
-</body>
-</html>
-</body>
-</html>
-<h1>5 boosters with charasteristics </h1>
-<TR>
-<TABLE BORDER="1" WIDTH=100% BGCOLOR="White">
-<TD>SN</TD> <TD>Photo</TD> <TD>Name</TD>
-<TD>Game</TD> <TD>Rank</TD> <TD>Rating</TD>
-</TR>
-<TD>1</TD> <TD> <img src="miracle.jpg" height = "100" width ="100"></TD>
-<TD>Miracle</TD> <TD>Dota 2</TD> <TD>8300mmr</TD> <TD>A</TD>
-</TR>
-<TD>2</TD> <TD><img src="simple.jpg" height = "100" width ="100"></TD>
-<TD>S1mple</TD> <TD>cs:go</TD> <TD>GLobal</TD> <TD>B<TD>
-</TR>
-<TD>3</TD> <TD><img src="dendi.jpg" height = "100" width ="100"></TD>
-<TD>Dendi<TD>Dota 2 </TD> <TD> 7500mmr</TD> <TD> C </TD>
-</TR>
-</TABLE>
-</form>      </div>
-<div id="footer1"> <!DOCTYPE html>
+<section class="home" id="home">
 
-     </div>
-<div id="footer2">         </div>
-<div class="icon-bar">    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table {
-  border-spacing: 1;
-  width: 90%;
-  border: 4px solid black;
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Level Up</h3>
+                        <p>Новички, которые впервые попадают в мир игр сталкиваются с некоторыми сложностями. Наша команда поможет вам достигнуть желаемого рейтинга в кратчайшие сроки!</p>
+                    </div>
+                </div>
+            </div>
 
-}
 
-th, td {
-  text-align: left;
-  padding: 12px;
-}
+</section>
 
-tr:nth-child(even) {
-  background-color: #f2f2f2
-}
-</style>
-</head>
-<body>
 
-<h1>All boosters</h1>
+<section class="about" id="about">
 
-<p>Press button for sort ranks to see highest professionals</p>
-<p style="font-size:18px;"><button onclick="sortTable()">Sort out rating table</button></p>
+    <div class="image">
+        <img src="images/about-img.jpg" alt="">
+    </div>
 
-<table id="myTable">
-  <tr>
-    <th>Rating</th>
-    <th>Name</th>
+    <div class="content">
+        <h3>О нашей команде</h3><hr>
+        <p><em>Быстро. Качественно. С душой! <br></em> Всего за 3 рабочиx дня!
+        </p><hr>
+        <div class="footer__social-header"><table>
+  <tr><hr>
+    <th>Игрок</th>
+    <th>Рабочие часы</th>
   </tr>
   <tr>
-    <td>B</td>
-    <td>Simple</td>
+    <td>Алексей</td>
+    <td>Максат</td>
   </tr>
   <tr>
-    <td>C</td>
-    <td>Dendi</td>
+    <td>22:00-08:00</td>
+    <td>Круглосуточно</td>
   </tr>
-  <tr>
-    <td>A</td>
-    <td>Miracle</td>
+            </table></div>
+        <a href="#" class="btn">Подать заявку</a>
+    </div>
 
-  <tr>
-</table>
+</section>
 
-<script>
-function sortTable() {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
-  switching = true;
-  /*Сделайте петлю, которая будет продолжаться до тех пор, пока
-  никакого переключения не было сделано:*/
-  while (switching) {
-    //начните с того, что скажите: никакого переключения не происходит:
-    switching = false;
-    rows = table.rows;
-    /*Цикл через все строки таблицы (за исключением
-    во-первых, который содержит заголовки таблиц):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //начните с того, что не должно быть никакого переключения:
-      shouldSwitch = false;
-      /*Получите два элемента, которые вы хотите сравнить,
-      один из текущей строки и один из следующей:*/
-      x = rows[i].getElementsByTagName("TD")[0];
-      y = rows[i + 1].getElementsByTagName("TD")[0];
-      //проверьте, должны ли две строки поменяться местами:
-      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-        //если это так, отметьте как переключатель и разорвите петлю:
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      /*Если переключатель был отмечен, сделайте переключатель
-      и отметьте, что переключение было сделано:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
-</script>
+
+
+<section class="reviews" id="reviews">
+    <div class="reviews">
+
+        <div class="row">
+          <div class="col">
+            <div class="review">
+              <img src="images/p1.png" alt="">
+              <div class="name">Колян Жуманов</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>
+                Спасибо большое! За хорошие деньги качественная работа! Быстро, понятно, надежно, всем рекомендую
+              </h3>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="review">
+              <img src="images/p2.png" alt="">
+              <div class="name">Искандер Бек</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h3>
+                Все отлично! Только игрок, выполнявший мой буст поменял ник на "чмо" ! Я конечно понимаю, что не зря заказываю буст, но все же плачу деньги!! Что это вообще
+              </h3>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="review">
+              <img src="images/p3.png" alt="">
+              <div class="name">Александ Лось</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <h3>Все прекрасно! Мне нравится, только ждал целых 9 часов 51 минуту, устал, поэтому 4 из 5
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<!-- reviews section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> НАШИ УСЛУГИ </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>DOTA 2</h3>
+            <p>компьютерная многопользовательская командная игра в жанре multiplayer online battle arena, разработанная корпорацией Valve</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+        <div class="box">
+            <h3>Counter-Strike: Global Offensive</h3>
+            <p>многопользовательская компьютерная игра, разработанная компаниями Valve и Hidden Path Entertainment.</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+        <div class="box">
+            <h3>World Of Tanks</h3>
+            <p>культовая ММО-игра о бронетехнике, покорившая миллионы игроков по всему миру.</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+        <div class="box">
+            <h3>FIFA</h3>
+            <p>серия компьютерных игр в жанре симулятора футбола, которая разрабатывается студией EA Canada, входящей в состав корпорации Electronic Arts.</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+        <div class="box">
+            <h3>League of Legends</h3>
+            <p>многопользовательская компьютерная игра в жанре MOBA, разработанная и выпущенная американской компанией Riot Games в 2009 году для платформ Microsoft Windows и macOS.</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+        <div class="box">
+            <h3>Path of Exile</h3>
+            <p>многопользовательская компьютерная игра в жанре Action/RPG, разработанная и выпущенная компанией Grinding Gear Games для Windows в 2013 году.</p>
+            <a href="#" class="btn">заказать</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- garanties section starts  -->
+
+<section class="garanties" id="garanties">
+
+    <h1 class="heading"> ГАРАНТИИ </h1>
+
+    <div class="swiper garanties-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/img-1.jpg" alt="">
+
+                <h3><br>WebMoney</h3>
+                <p>Мы аттестированы WebMoney, а значит, переводы на сайте безопасны, и мы не оставим вас с носом. </p>
+                <div class="footer__social-header">
+                            <li>Специальное предложение: <i>найдите баг сайта и получите 500&#8376;!  </i> </li>
+                    <li>E-mail: bustservice@hehe.com</li>
+                            <li>Режим работы справочной службы: Пн.-Вс. 09:00 - 18:00</li>
+
+                        </div>
+                <a href="#" class="btn">Смотреть аттестат</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- blogs section ends -->
+
+<!-- newsletter section  -->
+
+<section class="email">
+
+    <div class="content">
+        <h1 class="heading">Есть вопросы или предложения?</h1>
+        <p>Оставьте адрес электронной почты и мы с вами свяжемся!</p>
+        <form action="">
+            <input type="email" name="" placeholder="введите e-mail" id="" class="email">
+            <input type="submit" value="отправить" class="btn">
+        </form>
+    </div>
+
+</section>
+
+
+
+<section class="footer">
+
+
+</section>
+
 
 </body>
 </html>
-<head>
-		<link rel="stylesheet" href="style.css">
-</head>
-<body>	<nav class="navbar">
-				<ul>
-					<li><a class="active" href="Home.html">Home</a></li>
-					<li> <a href = "Guarantees.html">Guarantees</a> </li>
-					<li> <a href = "table.html">List of boosters</a> </li>
-
-				</ul>
-			</nav>
-			<div>
-
-					</script>
-</body>
-</html>
-<html>
-<head>
-<style>
-button {
-top: 450px;
-width: 25px;
-height: 70px;
-font: 12pt arial,tahoma,sans-serif;
- }
-button
- {
-
-position: absolute;
-top: 450px;
-width: 25px;
-height: 70px;
-font: 12pt arial,tahoma,sans-serif;
-text-align: center; }
-
-.left {
-
-}
-.right {
-right:0px;
-}
-#scr {
-border:2px solid black;
-width: 1339px;
-height: 1000px;
-background-size:cover;
-margin-top:-110px;
-margin-left:0px;
-</style>
-<script>
-var slider = {
-slides:['csgo.jpg','dota2.jpg','pubg.jpg',],
-frame:0, // текущий кадр для отбражения - индекс картинки из массива
-set: function(image) { // установка нужного фона слайдеру
-document.getElementById("scr").style.backgroundImage = "url("+image+")";
-},
-init: function() { // запуск слайдера с картинкой с нулевым индексом
-this.set(this.slides[this.frame]);
-},
-left: function() { // крутим на один кадр влево
-this.frame--;
-if(this.frame < 0) this.frame = this.slides.length-1;
-this.set(this.slides[this.frame]);
-},
-right: function() { // крутим на один кадр вправо
-this.frame++;
-if(this.frame == this.slides.length) this.frame = 0;
-this.set(this.slides[this.frame]);
-}
-};
-window.onload = function() { // запуск слайдера после загрузки документа
-slider.init();
-setInterval(function() { // 7sec
-slider.right();
-},7000);
-};
-</script>
-<body>
-<div id="main">
-<button class="left" onclick="slider.left();"><</button>
-<button class="right" onclick="slider.right ();">></button>
-<div id="scr" ></div>
-</div>
-</body>
-<div>
-<iframe width="700" height="400" src="https://www.youtube.com/embed/Q7M4ph7eRio"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<head>
-		<link rel="stylesheet" href="style.css">
-</head>
-<body>	<nav class="navbar">
-				<ul>
-					<li><a class="active" href="Home.html">Home</a></li>
-					<li> <a href = "Guarantees.html">Guarantees</a> </li>
-					<li> <a href = "table.html">List of boosters</a> </li>
-
-				</ul>
-				<h1 style="color:white">Welcome to the anylvl steam accounts sell & buy & boosting guarantees   </h1>
-			</nav>
-			<div>	</script>
-</body>
-
-XAMPP
-
-<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-<div class="about-section">
-  <h1>About Us</h1>
-  <p>Levelup.com website.
-  We are gaming service platform that
-  provides services for clients that are
-  interested in cheap accounts with diversity
-  of games, also, we provide boosting and upgrade
-  rating services in order to rank up your accounts.</p>
-  <p>Main instructions :
-  1)Open website
-  2)Register
-  3)Authorise
-  4)Order something without paying to the comment section, wait for the response</p>
-</div>
-
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="1.jpg" alt="Amir" style="width:50%">
-      <div class="container">
-        <h2>Askarov Amir</h2>
-        <p class="title">Website developer</p>
-        <p>The creator, developer and editor of website code, design and data</p>
-        <p>diasluvekov1337@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="2.jpg" alt="Aman" style="width:50%">
-      <div class="container">
-        <h2>Aman Kereev</h2>
-        <p class="title">Founder, organizator and administrator</p>
-        <p>The idea developer, finance controller and founder.</p>
-        <p>aman.kereev.02@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="3.jpg" alt="Anvar" style="width:50%">
-      <div class="container">
-        <h2>Anvar Iskhakov</h2>
-        <p class="title">Tester, worker</p>
-        <p>One of the boosters, testers of the website and workers</p>
-        <p>anvar.ishakov.02@mail.ru</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
