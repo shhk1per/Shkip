@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FIFA</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+		crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<bodyclass="container-fluid">
+	<header >
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="index.html"><strong style="font-size: 32px;">LEVEL UP</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav"><li class="nav-item">
+						<a class="nav-link" href="index.html #about">Наша команда</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html #reviews">Отзывы</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Услуги
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="dota2.html">DOTA 2</a>
+							<a class="dropdown-item" href="csgo.html">CS:GO</a>
+							<a class="dropdown-item" href="LOL.html">LOL</a>
+							<a class="dropdown-item" href="WOW.html">World Of Tanks</a>
+							<a class="dropdown-item" href="FIFA.html">FIFA</a>
+							<a class="dropdown-item" href="Poe.html">Path of Exile</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Регистрация</a>
+					  </li>
+					</ul>
+				  </div>
+				</nav>
+			</header>
+			
+			<div id="id01" class="modal">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			  <form class="modal-content animate" action="/action_page.php">
+				<div class="container">
+				  <b><h1>Sign Up</h1></b>
+				  <p>Please fill in this form to create an account.</p>
+				  <hr>
+				  <label for="email"><b>Email</b></label>
+				  <input type="text" placeholder="Enter Email" name="email" required>
+			
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+			
+				  <label for="psw-repeat"><b>Repeat Password</b></label>
+				  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				  
+				  <label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				  </label>
+			
+				  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+			
+				  <div class="clearfix">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<button type="submit" class="signupbtn">Sign Up</button>
+				  </div>
+				</div>
+			  </form>
+			</div>
+	<section class="home" id="home">
+		<div class="box" style="background: url(images/FIFA.jpg) no-repeat;">
+				
+<div class="service">
+		<div class="title">
+			<h2>FIFA</h2>
+		</div>
+
+		<div class = "row">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Это поможет тебе</h5>
+				<div class="pra">
+					<p>
+Играть с адекватными тиммейтами
+Повысить статистику аккаунта
+Получать удовольствие от игры</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Заказать буст</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Это безопасно</h5>
+				<div class="pra">
+					<p>
+Бустеры прошли проверку
+Меняем MAC адрес каждый заказ
+Бан невозможен, используем VPN</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Заказать буст</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Почему мы?</h5>
+				<div class="pra">
+					<p>
+Поддержка с 12:00 до 20:00 по МСК
+Команда бустеров из таблицы лидеров</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Заказать буст</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>

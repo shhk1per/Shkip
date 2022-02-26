@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container-fluid">
+<header>  
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#home"><strong style="font-size: 32px;">LEVEL UP</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Наша команда</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Услуги
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="dota2.html">DOTA 2</a>
+            <a class="dropdown-item" href="csgo.html">CS:GO</a>
+            <a class="dropdown-item" href="LOL.html">LOL</a>
+            <a class="dropdown-item" href="WOW.html">World Of Tanks</a>
+            <a class="dropdown-item" href="FIFA.html">FIFA</a>
+            <a class="dropdown-item" href="Poe.html">Path of Exile</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <b><h1>Sign Up</h1></b>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="mouseover.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<body>
+<section class="home" id="home">   
+    
+  <div class="slideshow-container"> 
+
+    <div class="mySlides fade" >
+      <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+        <div class="content">
+            <h3>Level Up</h3>
+            <p>Новички, которые впервые попадают в мир игр сталкиваются с некоторыми сложностями. Наша команда поможет вам достигнуть желаемого рейтинга в кратчайшие сроки!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="box" style="background: url(images/csgobcg.jpg) no-repeat;">
+        <div class="content">
+            <h3>Level Up</h3>
+            <p>Новички, которые впервые попадают в мир игр сталкиваются с некоторыми сложностями. Наша команда поможет вам достигнуть желаемого рейтинга в кратчайшие сроки!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="box" style="background: url(images/lolbcg.jpg) no-repeat;">
+        <div class="content">
+            <h3>Level Up</h3>
+            <p>Новички, которые впервые попадают в мир игр сталкиваются с некоторыми сложностями. Наша команда поможет вам достигнуть желаемого рейтинга в кратчайшие сроки!</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<section class="reviews" id="reviews">
+    <div class="reviews">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="review">
+              <img src="images/p1.png" alt="">
+              <div class="name">Алмаз Аргынович</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                Спасибо большое! За хорошие деньги качественная работа! Быстро, понятно, надежно, всем рекомендую
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="review">
+              <img src="images/p2.png" alt="">
+              <div class="name">Бек Аймандыров</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                Все отлично! Только игрок, выполнявший мой буст поменял ник на "чмо" ! Я конечно понимаю.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="review">
+              <img src="images/p3.png" alt="">
+              <div class="name">Амир Максатович</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>Все прекрасно! Мне нравится, только ждал целых 9 часов 51 минуту, устал, поэтому 4 из 5
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+
+<!-- reviews section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> НАШИ УСЛУГИ </h1>
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>DOTA 2</h3>
+            <p>компьютерная многопользовательская командная игра в жанре multiplayer online battle arena, разработанная корпорацией Valve</p>
+            <a href="dota2.html" class="btn">заказать</a>
+        </div>
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>Counter-Strike: Global Offensive</h3>
+            <p>многопользовательская компьютерная игра, разработанная компаниями Valve и Hidden Path Entertainment. очень интересная</p>
+            <a href="csgo.html" class="btn">заказать</a>
+        </div>
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>World Of Tanks</h3>
+            <p>культовая ММО-игра о бронетехнике, покорившая миллионы игроков по всему миру. для геев и пенсионеров и еще для маленьких детей</p>
+            <a href="WOW.html" class="btn">заказать</a>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>FIFA</h3>
+            <p>серия компьютерных игр в жанре симулятора футбола, которая разрабатывается студией EA Canada, входящей в состав корпорации Electronic Arts.</p>
+            <a href="FIFA.html" class="btn">заказать</a>
+        </div>
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>League of Legends</h3>
+            <p>многопользовательская компьютерная игра в жанре MOBA, разработанная и выпущенная американской компанией Riot Games в 2009 году для платформ Microsoft Windows и macOS.</p>
+            <a href="LOL.html" class="btn">заказать</a>
+        </div>
+
+        <div class="boxs col-lg-4 col-md-6">
+            <h3>Path of Exile</h3>
+            <p>многопользовательская компьютерная игра в жанре Action/RPG, разработанная и выпущенная компанией Grinding Gear Games для Windows в 2013 году.</p>
+            <a href="Poe.html" class="btn">заказать</a>
+        </div>
+        </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- garanties section starts  -->
+
+<!-- garanties section starts  -->
+<section class="about" id="about">
+  <div class="main">
+    <img src="images/%D1%82%D0%B8%D0%BC.png">
+    <div class="about-text">
+      <h2>МЫ НАСТОЯЩИЕ ПРОФЕССИОНАЛЫ</h2>
+      <h5>Надежность & эффективность</h5>
+      <p>Наши главные преимущества перед другими сервисами - это скорость, безупречное обслуживание и преимущественно низкие цены. Мы хотим, чтобы Вы считали LevelUp таким, каким считаем его мы - надёжным, качественным и комфортным!</p>
+      <button onclick="document.location='zayavka.html'"type="button">Заказать</button>
+    </div>
+  </div>
+</section>
+<!-- blogs section ends -->
+<!-- newsletter section  -->
+    
+    
+		<section id="sofa-collection"> 
+			<div class="owl-carousel owl-theme" id="collection-carousel">
+				<div class="sofa-collection collectionbg1">
+					<div class="container">
+						<div class="sofa-collection-txt">
+							<center><h2>Наша команда<br><br>Предлагаем вам услуги опытных бустеров, готовых в кратчайшие сроки выполнить поставленные задачи. Заказывайте буст ММР Дота 2 без посредников по реальным рыночным ценам. Гарантируем полную безопасность сделок и широкий выбор исполнителей. 
+							</h2></center>
+						</div>
+					</div>	
+				</div><!--/.sofa-collection-->
+
+		</section>
+<section class="email">
+    <div class="content">
+        <p>Есть вопросы или предложения? <br>
+        Оставьте адрес электронной почты и мы с вами свяжемся!</p>
+        <form action="">
+            <input type="email" name="" placeholder="e-mail" id="" class="email">
+            <input type="submit" value="отправить" class="btn">
+        </form>
+    </div>
+</section>
+
+
+
+
+<section class="footer"><footer>
+		<center><h2>Level Up. <br> <br>Данный сайт функционирует как торговая площадка и <br>не является собственником продаваемых товаров/услуг. <br>Все права принадлежат их владельцам.</h2></center>
+ 	<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+	</footer>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
